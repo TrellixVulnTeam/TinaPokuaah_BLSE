@@ -1,0 +1,25 @@
+{
+  "name": "tinapokauuahconsultants",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "live-server",
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pa-may/tinapokauuah.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pa-may/tinapokauuah/issues"
+  },
+  "homepage": "https://github.com/pa-may/tinapokauuah#readme"
+}

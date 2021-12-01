@@ -1,0 +1,563 @@
+// .topsection {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+//   position: relative;
+//   top: 15rem;
+//   margin: 0 30rem 35rem 30rem;
+
+//   @media (max-width: 1024px) {
+//     margin: 0 15rem 35rem 15rem;
+//   }
+
+//   @media (max-width: 768px) {
+//     flex-direction: column;
+//     margin: 0 7rem 35rem 7rem;
+//   }
+
+//   @media (max-width: 480px) {
+//     flex-direction: column;
+//     margin: 0 3rem 25rem 3rem;
+//   }
+// }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  top: 9rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0rem;
+  }
+}
+
+.landing-con {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  top: 15rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.landing-img {
+  width: 30%;
+  height: 90vh;
+  position: relative;
+  background-image: url(../img/tinaprofile.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (max-width: 1024px) {
+    height: 70vh;
+  }
+
+  @media (max-width: 768px) {
+    height: 75vh;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    background-size: contain;
+    height: 45vh;
+  }
+}
+
+.landing-content {
+  position: relative;
+  width: 60%;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+form {
+  position: relative;
+  padding: 4rem;
+  background-color: whitesmoke;
+  box-shadow: 0 0 0.1rem 0.1rem rgba(128, 128, 128, 0.301);
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // display: none;
+}
+
+.field-group {
+  width: 100%;
+}
+
+.field-group input {
+  position: relative;
+  display: block;
+  height: 6.5rem;
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+.subscribe-icon {
+  width: 5rem;
+  height: 5rem;
+  background-image: url(../img/envelope-bookmark.svg);
+}
+.indicates-required {
+  position: relative;
+  font-size: 1.2rem;
+}
+
+// #mc_embed_signup {
+//   position: relative;
+//   padding: 2rem 0;
+//   border-radius: 0.5rem;
+//   box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.212);
+// }
+
+#mc-embedded-subscribe-form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  width: 100%;
+  background-color: whitesmoke;
+  box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.089);
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mc-field-group {
+  width: 100%;
+}
+
+.form-header {
+  font-size: 3.2rem;
+  color: var(--dark-grey);
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-para {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.email,
+.first-name,
+.last-name {
+  position: relative;
+  display: block;
+  width: 100%;
+  border: #d3d3d3 solid 0.1rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    height: 6rem;
+  }
+}
+
+.email-label,
+.lname,
+.fname {
+  font-size: 1.3rem;
+}
+
+.asterisk {
+  color: red;
+}
+
+.small-print {
+  font-size: 1.1rem;
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+}
+
+.error-msg {
+  font-size: 1.1rem;
+  color: red;
+  display: none;
+}
+
+.input-error {
+  outline: red solid 0.2rem;
+  display: none;
+}
+
+.input-success {
+  outline: rgb(0, 236, 0) solid 0.2rem;
+  display: none;
+}
+
+.button {
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color: rgb(235, 5, 5);
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+
+  @media (max-width: 480px) {
+    padding: 2rem;
+  }
+}
+
+.button:hover {
+  background-color: rgb(238, 49, 49);
+}
+
+.error {
+  background-color: cadetblue;
+}
+
+.popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  box-shadow: 0 0 0.1rem 0.1rem rgba(128, 128, 128, 0.301);
+  padding: 4rem;
+  z-index: 2;
+  // display: none;
+  transition: ease-in 0.3s;
+  transform: translateY(10rem);
+}
+
+.confirmation {
+  background-color: rgb(48, 179, 48);
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation i {
+  font-size: 5rem;
+}
+
+.confirmation h2 {
+  color: white;
+}
+
+.popup-img {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background-image: url(../img/aff1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cancel-btn {
+  cursor: pointer;
+}
+
+.book-img {
+  position: relative;
+  display: block;
+  margin-top: 8rem;
+  left: -8rem;
+  width: 45%;
+  // transform: translateX(-16px);
+
+  @media (max-width: 1024px) {
+    left: -5rem;
+  }
+
+  @media (max-width: 768px) {
+    left: 10rem;
+    margin-top: 0rem;
+    width: 75%;
+  }
+
+  @media (max-width: 480px) {
+    left: 7rem;
+  }
+}
+
+.socials1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(49, 56, 56);
+  position: fixed;
+  top: 15rem;
+  z-index: 5;
+  right: 0;
+  // height: 20vh;
+}
+
+.icon {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(49, 56, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  border-bottom: 0.01rem solid white;
+  transition: 0.4s ease;
+  z-index: 11;
+}
+
+.icon:hover {
+  background-color: rgb(74, 85, 85);
+}
+
+.buy-btn {
+  width: 100%;
+  background-color: var(--green-btn);
+  padding: 1.5rem;
+  box-shadow: 0 0.2rem 0.4rem 0.1rem #5a5a5a;
+}
+
+.quote {
+  position: relative;
+  display: block;
+  font-family: 'Montagu Slab', serif;
+
+  @media (max-width: 1024px) {
+    margin: 0 15rem;
+  }
+  @media (max-width: 768px) {
+    margin: 0 7rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 1.5rem 3rem;
+    font-size: 5rem;
+  }
+}
+
+.buy-btn-txt {
+  font-size: 2rem;
+  color: white;
+}
+
+.illustration {
+  width: 100%;
+}
+
+.about {
+  margin: 0 30rem;
+  padding: 4rem;
+  background-color: var(--about-section);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    margin: 0 15rem;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 7rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 1.5rem 3rem;
+  }
+}
+
+.profile-pic {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: url(../img/TinaPokuaah.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 0.2rem 0.3rem rgba(88, 90, 52, 0.041);
+}
+i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.affi-con {
+  margin: 0 30rem;
+
+  @media (max-width: 1024px) {
+    margin: 0 15rem;
+  }
+  @media (max-width: 768px) {
+    margin: 0 7rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 1.5rem 3rem;
+  }
+}
+
+.affi-box {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.affi-img-1,
+.affi-img-2 {
+  width: 50%;
+  position: relative;
+  display: block;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.affi-img-1 {
+  background-image: url(../img/aff2.jpg);
+}
+.affi-img-2 {
+  background-image: url(../img/affir.card.jpg);
+}
+
+#smart-button-container {
+  width: 100%;
+  height: 100%;
+}
+
+.illust {
+  width: 100%;
+  height: 33vh;
+  position: relative;
+  display: block;
+  background-image: url(../img/person-enjoying-relaxing-time-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    height: 50vh;
+  }
+
+  @media (min-width: 1680px) {
+    height: 70vh;
+  }
+}
+
+s {
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: blue;
+}
+
+.link-con {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.062);
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.link-con:hover {
+  background-color: whitesmoke;
+}
+
+.link-con img {
+  position: relative;
+  display: block;
+  width: 5rem;
+}
+
+.link-con i {
+  color: var(--dark-grey);
+}
+
+#mc_embed_signup .button {
+  background-color: red;
+  width: 100%;
+  font-size: 2rem;
+}
+
+#mc-embedded-subscribe-form {
+  padding: 3rem;
+}
+
+#mc_embed_signup_scroll {
+  width: 100%;
+}
+.optionalParent {
+  width: 100%;
+}
+
+.disclaimer,
+.indicates-required {
+  position: relative;
+  display: block;
+  color: gray;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.term {
+  text-decoration: underline;
+  color: gray;
+}
+
+.email-label {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.sub-para {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form-icon {
+  position: relative;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-image: url(../img/envelope-bookmark.svg);
+}
+
+#mce-error-response {
+  background-color: white;
+}
+
+#mce-EMAIL {
+  font-size: 2rem;
+}

@@ -1,0 +1,42 @@
+nav {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  padding: 1.5rem 30rem;
+  box-shadow: 0 0 0.5rem 0.2rem #dcdad7;
+  top: 0;
+  z-index: 9999;
+
+  @media (max-width: 1366px) {
+    padding: 1.5rem 15rem;
+  }
+  @media (max-width: 768px) {
+    padding: 1.5rem 7rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 1.5 3rem;
+  }
+  @media (max-width: 480px) {
+    padding: 1.5rem 3rem;
+  }
+}
+
+.logo {
+  height: 6rem;
+  width: 25rem;
+  background-image: url(../img/tinalogo-01.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.nav-link {
+  font-size: 1.8rem;
+  color: var(--dark-grey);
+}

@@ -1,0 +1,176 @@
+main {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  padding: 0 50rem;
+  margin: 0;
+
+  @media (max-width: 1420px) {
+    padding: 0 30rem;
+  }
+
+  // @media (max-width: 1024px) {
+  //   padding: 0 30rem;
+  // }
+
+  @media (max-width: 768px) {
+    padding: 0 15rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 8rem;
+  }
+}
+
+.confirmation-con {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 100%;
+  background-color: transparent;
+}
+
+.confirmation-con2 {
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.9rem 0.1rem rgba(128, 128, 128, 0.24);
+}
+.confirm-icon {
+  height: 8rem;
+  width: 8rem;
+  position: relative;
+  display: block;
+  background-image: url(../img/check-circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.confirmation-box1 {
+  background-color: #3dc69e;
+  padding: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.confirmation-box2 {
+  position: relative;
+  background-color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.back-btn {
+  position: relative;
+  width: 25%;
+  height: 5vh;
+  background-color: #3dc69e;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  transition: ease 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #34aa87;
+}
+.download-con {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 2rem 0 0 0;
+  background-color: white;
+  box-shadow: 0 0 0.9rem 0.1rem rgba(128, 128, 128, 0.24);
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.download-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.download-box {
+  position: relative;
+  width: 100%;
+  // background-color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  padding: 2rem;
+  border-top: rgb(223, 223, 223) solid 0.1rem;
+}
+
+.congrats {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.confirm-para {
+  color: gray;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.download-icon {
+  position: relative;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../img/file_download_black_24dp.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.download-btn {
+  position: relative;
+  display: block;
+  width: 30%;
+  height: 6vh;
+  background-color: #1d6996;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.3s;
+  font-size: 1.3rem;
+}
+
+.download-btn:hover {
+  background-color: #18587e;
+}
+
+.download-btn-icon {
+  position: relative;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/file_download_black_24dp.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 1rem;
+  fill: white;
+}
